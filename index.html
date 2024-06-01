@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CourseSteady</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="hero-section text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-4">Welcome to CourseSteady</h1>
+            <p class="lead">This is a simple landing page regarding plans of full stack web development courses.</p>
+            <a href="#features" class="btn btn-primary btn-lg">Let's Get Started</a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box text-center">
+                        <i class="fas fa-star fa-3x"></i>
+                        <h3>Frontend Web Development</h3>
+                        <p>In this frontend web development course you will be studying about languages like <b>HTML, CSS and JavaScript</b> and frameworks and libraries like <b>ReactJs, AngularJs and ExpressJs</b> and also tools like <b>Wordpress & Woo</b>. In basic plan you will only study <b>HTML, CSS and JavaScript</b>. In the standard plan you will also study about <b>ReactJs, AngularJs and ExpressJs</b>. In the premium plan additionally you will be studying tools like <b>Wordpress & Woo</b>.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box text-center">
+                        <i class="fas fa-cog fa-3x"></i>
+                        <h3>Backend Web Development</h3>
+                        <p>In this backend web development course you will be stydying about languages like <b>Advanced JavaScript and Python</b> and also frameworks like <b>NodeJs and Django</b>. In basic plan you will only study <b>Advanced JavaScript & Python</b>. In the standard plan you will also study about <b>Basic Django & NodeJs</b>. In the premium plan additionally you will be studying tools like <b>Advanced Django & NodeJs</b>.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box text-center">
+                        <i class="fas fa-heart fa-3x"></i>
+                        <h3>Full Stack Web Development</h3>
+                        <p>Finally in this full stack plan you will be studying about database like <b>MongodB and SQL(MySQL)</b>.Also you will be working on the real-time full stack web development projects as well.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="pricing-box text-center p-4">
+                        <h3>Basic Plan</h3>
+                        <p class="price">$10/month</p>
+                        <ul class="list-unstyled">
+                            <li>Frontend Web Development</li>
+                            <li>Backend Web Development</li>
+                        </ul>
+                        <button class="btn btn-primary">Sign Up</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-box text-center p-4">
+                        <h3>Standard Plan</h3>
+                        <p class="price">$20/month</p>
+                        <ul class="list-unstyled">
+                            <li>Frontend Web Development</li>
+                            <li>Backend Web Development</li>
+                        </ul>
+                        <button class="btn btn-primary">Sign Up</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-box text-center p-4">
+                        <h3>Premium Plan</h3>
+                        <p class="price">$30/month</p>
+                        <ul class="list-unstyled">
+                            <li>Frontend Web Development</li>
+                            <li>Backend Web Development</li>
+                            <li>Full Stack Web Development</li>
+                        </ul>
+                        <button class="btn btn-primary">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="text-center">Contact Us</h2>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 CourseSteady By Jeetu Singh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
